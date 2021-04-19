@@ -1,6 +1,6 @@
-#coins{
+#coinsHere{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 .coin {
     width: 100px;
@@ -10,3 +10,4 @@
     line-height: 100px;
     text-align: center;
 }
+

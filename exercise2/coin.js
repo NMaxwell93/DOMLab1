@@ -7,14 +7,18 @@
 
     let coinCount = document.getElementById("howMany").value;
     let coinName = document.getElementById("whichCoin").value;
-    newCoinEl.innerText = coinName;
-    for (let i = 0; i < coinCount; i++) {
+    console.log(coinName)
+    console.log(coinCount)
     
-    newCoinEl.classList.add("coin");
-    let newCoinEl = document.createElement("div");
-    let theContainer = document.getElementById("coins");
-    theContainer.apppend(newCoinEl);
+    for (let i = 0; i < coinCount; i++) {
+      let newCoinEl = document.createElement("div");
+      newCoinEl.innerText = coinName;
+      newCoinEl.classList.add("coin");
+      newCoinEl.classList.add("coin-" + coinName)
+      
 
-}
+      let theContainer = document.getElementById("coinsHere");
+      theContainer.append(newCoinEl);
+    }
   });
 }
