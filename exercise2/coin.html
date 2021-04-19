@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sytlesheet" href="coin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Coin Machine</h2>
+    <section>
+      <form id="moneyForm">
+        <p>
+          <label for="howMany">How many?</label>
+          <input type="number" id="howMany" value="1" min="1" step="1" />
+        </p>
+        <p>
+          <label for="whichCoin">Which coin?</label>
+          <select id="whichCoin">
+            <option>Penny</option>
+            <option>Nickel</option>
+            <option>Dime</option>
+            <option>Quarter</option>
+          </select>
+        </p>
+        <p>
+          <button type="submit">Make Money!!!</button>
+        </p>
+      </form>
+    </section>
+    <div id="coins">
+
+    </div>
+
+    <script src="coin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+#coins{
+    display: flex;
+    flex: wrap;
+}
+.coin {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    line-height: 100px;
+    text-align: center;
+}
